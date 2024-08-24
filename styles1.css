@@ -1,0 +1,26 @@
+img {
+    width: 100px;
+}
+
+#checkbox {
+    display: none;
+}
+
+.content >p{
+    background-color:blueviolet;
+    color: aqua;
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+#checkbox:checked+.content {
+    max-height: 300px;
+}
